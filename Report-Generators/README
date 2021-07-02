@@ -1,0 +1,51 @@
+program author:
+		Yize Zhao
+		101103310
+
+Purpose:
+	In this project, I design and implement a C++ program that generates a set of reports based on
+	data from Canada’s National Graduate Survey (NGS) from the years 2000-2015. My code is correctly 
+	separated into object design categories, and it meets every principle of good software engineering that we
+	have covered in class.
+
+List of source and header files:
+
+				Control.cc
+				Control.h
+				FemaleReportGenerator.cc
+				GradsReportGenerator.cc
+				main.cc
+				Property.h
+				Record.cc
+				Record.h
+				RegionReportGenerator.cc
+				ReportGenerator.cc
+				ReportGenerator.h
+				UnemploymentReportGenerator.cc
+				View.cc
+				View.h
+				YearReportGenerator.cc
+				
+Compilation and launching instructions:
+					1, make
+					2, ./fp
+					3, valgrind ./fp
+					
+					
+					
+
+Description of the new reports created for requirement 3.1:
+
+(4) - Unemployedment Males, Females and All Report:-------------> we can clearly see is the unemployment percentage high for men or for women or for all in different degrees.
+								
+	-- the unemployedment percentage for each degrees, by Males and Females and All, for all years and all regions
+		-- each degree is a row, and Males and Females and All is a column
+		-- each cell show the percentage who were unemployed in that degree, with that gender, for all years and all regions
+		   combined, compared to the number of graduates in that degree.
+								
+								
+(5) - Grads Report:----------------> we can clearly see how the number of graduates increase and decrease.
+
+	-- the number of graduates for each year, by region, for all genders and all degrees
+		-- each year is a row, and each region is a column
+		-- each cell show the number of graduates in that year, with that region, for all genders and all degrees combined.
